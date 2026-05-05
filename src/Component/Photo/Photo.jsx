@@ -1,0 +1,33 @@
+import useFetch from "../../Hooks/useFetch";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import Error from "../Helper/Error";
+import Loading from "../Helper/Loading";
+import PhotoContent from "./PhotoContent";
+import { PHOTO_GET } from "../../Api";
+import Head from "../Helper/Head";
+
+const Photo = () => {
+    const { id } = useParams();
+    const { dados, loading, error, request } = useFetch();
+
+    useEffect(() => {
+        const { url, options } = PHOTO_GET(id);
+        request(url, options);
+    }, [request, id]);
+
+    if (error) return <Error error={error} />
+    if (loading) return <Loading />
+    if (dados)
+        return (
+            <section className="container mainContainer">
+                <Head title={dados.photo.title} />
+                <PhotoContent single={true} dados={dados} />
+            </section>
+        );
+    else {
+        return null;
+    };
+};
+
+export default Photo;
