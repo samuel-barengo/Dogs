@@ -4,7 +4,6 @@ import { VictoryPie, VictoryChart, VictoryBar } from 'victory';
 const UserStatsGraphs = ({ dados }) => {
     const [graph, setGraph] = useState([]); //criado a partir de uma array de item
     const [total, setTotal] = useState(0);
-    console.log(dados)
 
     useEffect(() => {
         const graphDados = dados.map(item => {
