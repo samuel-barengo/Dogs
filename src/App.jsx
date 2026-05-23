@@ -1,15 +1,15 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from './Component/Header';
-import Home from './Component/Home';
-import Footer from './Component/Footer';
-import Login from './Component/Login/Login';
+import Header from './component/Header';
+import Home from './component/Home';
+import Footer from './component/Footer';
+import Login from './component/Login/Login';
 import { UserStorage } from './UserContext';
-import User from './Component/User/user';
-import ProtectedRoute from './Component/Helper/ProtectedRoute';
-import Photo from './Component/Photo/Photo';
-import UserProfile from './Component/User/UserProfile';
-import NotFound from './Component/NotFound';
+import User from './component/User/user';
+import ProtectedRoute from './component/Helper/ProtectedRoute';
+import Photo from './component/Photo/Photo';
+import UserProfile from './component/User/UserProfile';
+import NotFound from './component/NotFound';
 
 const App = () => {
     return (
