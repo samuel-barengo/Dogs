@@ -1,6 +1,6 @@
 import styles from './Login.module.css';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import LoginForm from './loginForm';
+import LoginForm from './LoginForm';
 import LoginCreate from './LoginCreate';
 import LoginPasswordlost from './LoginPasswordLost';
 import LoginPasswordReset from './LoginPasswordReset';
