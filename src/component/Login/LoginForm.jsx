@@ -5,7 +5,7 @@ import Button from "../Form/Button";
 import useForm from "../../Hooks/useForm";
 import { UserContext } from '../../UserContext'
 import Error from '../Helper/Error'
-import styles from './loginForm.module.css'
+import styles from './LoginForm.module.css'
 import stylesBtn from '../Form/Button.module.css'
 import Head from '../Helper/Head'
 const loginForm = () => {
