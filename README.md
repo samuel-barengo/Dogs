@@ -1,16 +1,68 @@
-# React + Vite
+# 🐶 Dogs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Rede social feita para cachorros — like Instagram, mas focada em pets. Os usuários podem criar conta, publicar fotos dos seus cães, seguir outros perfis, comentar nas publicações e acompanhar estatísticas do próprio perfil.
 
-Currently, two official plugins are available:
+🔗 **Deploy:** [dogs-omega-one.vercel.app](https://dogs-omega-one.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Funcionalidades
 
-## React Compiler
+- 🔐 Autenticação de usuário (login/cadastro)
+- 📰 Feed de publicações
+- 🖼️ Criação de posts com imagens
+- 💬 Comentários em publicações
+- 👤 Perfil de usuário (próprio e de outros membros)
+- 📊 Página de estatísticas com gráficos sobre os posts do usuário
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologias
 
-## Expanding the ESLint configuration
+- **React** — construção da interface e componentização
+- **Vite** — ambiente de desenvolvimento e build
+- **Context API + Custom Hooks** — gerenciamento de estado global e lógica reutilizável (autenticação, dados de posts/usuário, etc.)
+- **CSS** — estilização
+- **ESLint** — padronização e qualidade do código
+- **Vercel** — deploy e hospedagem
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Rodando localmente
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/samuel-barengo/Dogs.git
+cd Dogs
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o ambiente de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+A aplicação estará disponível em `http://localhost:5173` (porta padrão do Vite).
+
+## 📁 Estrutura do projeto
+
+```
+Dogs/
+├── public/          # arquivos estáticos
+├── src/             # código-fonte da aplicação (componentes, hooks, contextos, páginas)
+├── index.html
+├── vite.config.js
+├── vercel.json
+└── package.json
+```
+
+## 📚 Sobre o projeto
+
+Este projeto foi desenvolvido a partir do desafio prático do curso **React Completo** da [Origamid](https://www.origamid.com/), com API e design fornecidos pelo curso. A implementação da lógica de estado, hooks customizados e organização do código foi feita por mim, aplicando os conceitos estudados de Context API, hooks e consumo de API REST.
+
+## 👤 Autor
+
+**Samuel Barengo**
+- GitHub: [@samuel-barengo](https://github.com/samuel-barengo)
+- LinkedIn: [linkedin.com/in/samuel-barengo](https://linkedin.com/in/samuel-barengo)
